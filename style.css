@@ -1,12 +1,27 @@
 .offer-sec {
-    margin: 120px 50px;
+    padding: 120px 50px;
     max-width: 1440px;
 }
 
 * {
     margin: 0;
 }
+.header-sec {
+    background: url(http://surl.li/aocsu);
+    width: 1440px;
+    height: 900px;
 
+}
+.header-container {
+    padding: 51px 104px 120px 10px;
+}
+.header-body {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu {
+    display: flex;
+}
 .offer-header {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -29,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 0px 153px 0px 188px
+    padding: 0px 155px 0px 190px
 }
 
 .icon-container {
@@ -48,7 +63,6 @@
     min-width: 1440px;
     min-height: 828px;
     background-color: #EAF0F9;
-    margin: 140px 0px;
 }
 .loves-header {
     font-family: 'Roboto', sans-serif;
@@ -63,10 +77,9 @@
     display: flex;
     justify-content: space-around;
     margin: 105px 0px 120px 0px;
-    padding: 0px 103px 0px 105px;
+    padding: 0px 105px 0px 105px;
     column-gap: 16px;
 }
-
 .love-container {
     text-align: left;
 }
@@ -108,19 +121,19 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 120px 0px 120px 104px;
+    padding: 120px 0px 120px 105px;
     background: #10367C;
 }
 .footer-interior {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 33px;
 }
 .footer-column {
     display: flex;
     flex-direction: column;
-    width: 33.333%;
     margin-right: 180px;
-    margin-bottom: 33px;
+
     padding-left: 1px;
 }
 .footer-column:last-child {
