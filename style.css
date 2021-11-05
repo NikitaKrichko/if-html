@@ -246,18 +246,15 @@
     line-height: 28px;
     color: #BFBFBF;
 }
-.love-arrow {
+.slider-container {
     position: absolute;
-    top: 238%;
-    left: 124%;
-    padding: 0 15px;
-    transform: translate(-50%, 0%);
-    height: 40px;
-    width: 40px;
-    box-sizing: border-box;
-    border-radius: 50%;
+    top: 235%;
+    left: 114%;
+    transform: translate(-50%, 0);
     box-shadow: 0 4px 4px #0000003F;
+    border-radius: 50%;
     background: #F3F3F4;
+    padding: 0 15px;
 }
 .footer {
     position: relative;
