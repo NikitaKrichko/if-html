@@ -6,6 +6,22 @@
 * {
     margin: 0;
 }
+:root {
+    --columns-count: 12;
+}
+.col-1 {width: calc(100% / var(--columns-count) * 1)}
+.col-2 {width: calc(100% / var(--columns-count) * 2)}
+.col-3 {width: calc(100% / var(--columns-count) * 3)}
+.col-4 {width: calc(100% / var(--columns-count) * 4)}
+.col-5 {width: calc(100% / var(--columns-count) * 5)}
+.col-6 {width: calc(100% / var(--columns-count) * 6)}
+.col-7 {width: calc(100% / var(--columns-count) * 7)}
+.col-8 {width: calc(100% / var(--columns-count) * 8)}
+.col-9 {width: calc(100% / var(--columns-count) * 9)}
+.col-10 {width: calc(100% / var(--columns-count) * 10)}
+.col-11 {width: calc(100% / var(--columns-count) * 11)}
+.col-12 {width: calc(100% / var(--columns-count) * 12)}
+
 .header-sec {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -15,6 +31,11 @@
     width: 1440px;
     background: url(http://surl.li/aocsu);
     background-size: cover;
+}
+.header-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .header-back {
     background: rgba(18, 18, 18, 0.25);
@@ -122,7 +143,7 @@
     padding: 20px 65px;
     border-radius: 8px;
     font-size: 18px;
-    width: 36.6%;
+    width: 34.6%;
 }
 .second-container {
     align-items: center;
@@ -272,6 +293,9 @@
     padding: 120px 105px 120px 105px;
     background: #10367C;
 }
+.footer-logo {
+    display: none;
+}
 .footer-interior {
     display: flex;
     justify-content: space-between;
@@ -305,4 +329,130 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .offer-sec {
+        padding: 80px 32px
+    }
+    h2::after{
+        display: none;
+    }
+    .offer-header {
+        margin-bottom: 36px;
+    }
+    .icons-container {
+        flex-wrap: wrap;
+    }
+    .icon-container {
+        width: calc(50% - 16px);
+        margin-top: 32px;
+    }
+    .icon-container:not(:last-child) {
+        margin-right: 32px;
+    }
+    .icon-container:nth-child(even) {
+        margin-right: 0;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .footer-logotype {
+        display: block;
+    }
+    .footer-interior{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .footer-column {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-column li:first-child {
+        margin-bottom: 0;
+    }
+    .footer-column li:not(:first-child) {
+        display: none;
+    }
+    .footer-column-item:first-child {
+        display: flex;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+@media (max-width: 480px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .offer-sec {
+        padding: 40px 16px;
+        min-height: 360px;
+    }
+    .offer-header {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .icon-container:first-child {
+        margin-top: 0;
+    }
+    .icon-container:nth-child(odd) {
+        margin-right: 0;
+    }
+    .icon-label {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer-interior {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-logotype {
+        display: block;
+        max-width: 98px;
+        max-height: 19px;
+        fill: #FFFFFF;
+    }
+    .footer-column {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-right: 16px;
+    }
+    .footer-column-links {
+        font-size: 18px;
+    }
+    .footer-column-item:first-child {
+        display: flex;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .footer-column:first-child {
+        padding: 0;
+    }
+    .footer-column-item {
+        display: none;
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
